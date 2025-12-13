@@ -1,0 +1,28 @@
+# 忽略 Visual Studio 的临时构建目录
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Bb]in/
+[Oo]bj/
+
+# 忽略 Visual Studio 的配置和索引文件
+.vs/
+*.user
+*.suo
+*.db
+*.opendb
+
+# 忽略编译生成的中间文件
+*.obj
+*.pdb
+*.ilk
+*.aps
+*.tlog
+*.idb
+*.ipch
+
+# 如果你有打包产生的压缩包，也可以忽略（可选）
+*.zip
+*.rar

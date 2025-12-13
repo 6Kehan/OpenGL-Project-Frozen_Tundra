@@ -1,0 +1,25 @@
+# WaveFront *.mtl file (已为本项目修正)
+
+newmtl defaultMat
+# 漫反射、高光和光泽度参数
+Kd 0.800000 0.800000 0.800000
+Ks 0.250000 0.250000 0.250000
+Ns 46.439
+illum 7
+
+# --- 纹理贴图路径 (已修正并添加) ---
+
+# Albedo/Diffuse (颜色)
+map_Kd textures/Albedo.png
+
+# Specular (高光)
+# (我们使用 Specular.png。如果效果不好，可以换成 Gloss.png)
+map_Ks textures/Specular.png
+
+# Normal Map (法线/凹凸)
+# (注意：使用 'map_bump' 或 'bump' 来加载法线贴图)
+map_bump textures/Normal_map.png
+
+# Ambient Occlusion (AO) (可选)
+# 我们的着色器目前还用不到它，但先加上也没问题
+map_Ka textures/AO_Map.png
