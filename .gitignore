@@ -1,4 +1,4 @@
-# 忽略 Visual Studio 的临时构建目录
+# Visual Studio build output directories
 [Dd]ebug/
 [Rr]elease/
 x64/
@@ -7,14 +7,16 @@ x86/
 [Bb]in/
 [Oo]bj/
 
-# 忽略 Visual Studio 的配置和索引文件
+# Visual Studio user settings and cache
 .vs/
 *.user
 *.suo
 *.db
 *.opendb
+*.sdf
+*.opensdf
 
-# 忽略编译生成的中间文件
+# Build intermediate files
 *.obj
 *.pdb
 *.ilk
@@ -22,7 +24,31 @@ x86/
 *.tlog
 *.idb
 *.ipch
+*.tlb
+*.tlh
 
-# 如果你有打包产生的压缩包，也可以忽略（可选）
+# Third-party binary / library files (not headers)
+assimp/bin/
+assimp/lib/
+freeglut/bin/
+freeglut/lib/
+glew-1.10.0/bin/
+glew-1.10.0/lib/
+glew-1.10.0/doc/
+glew-1.10.0/LICENSE.txt
+glew-1.10.0/README.txt
+glew-1.10.0/TODO.txt
+freeglut/Copying.txt
+freeglut/Readme.txt
+
+# Binary file types (anywhere in the project)
+*.lib
+*.dll
+*.exe
+
+# Documents and archives
+*.docx
 *.zip
 *.rar
+*.7z
+*.tar.gz
